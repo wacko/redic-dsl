@@ -26,4 +26,11 @@ redis.set "foo", "bar"
 # => "OK"
 redis.get "foo"
 # => "bar"
+
+redis.pipelined do |r|
+  r.set "baz", 1
+  r.incr "baz"
+  r.get "baz"
+end
+# => ["OK", 2, "2"]
 ```
