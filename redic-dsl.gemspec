@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name              = "redic-dsl"
-  s.version           = "0.0.1"
+  s.version           = "0.0.2"
   s.summary           = "DSL wrapper for Redic"
   s.description       = "Add some DSL around redic, a lightweight Redis client"
   s.author            = "Joaquín Vicente"
@@ -12,6 +12,6 @@ Gem::Specification.new do |s|
 
   s.files             = `git ls-files`.split("\n")
 
-  s.add_dependency "redic", '~> 0'
-  s.add_development_dependency "cutest", '~> 0'
+  s.add_dependency "redic"
+  s.add_development_dependency "cutest"
 end
