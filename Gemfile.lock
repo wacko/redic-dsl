@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    redic-dsl (0.0.2)
+      redic
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    clap (1.0.0)
+    cutest (1.2.3)
+      clap
+    hiredis (0.6.1)
+    redic (1.5.0)
+      hiredis
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cutest
+  redic-dsl!
+
+BUNDLED WITH
+   1.14.6
