@@ -1,4 +1,4 @@
 language: ruby
 rvm:
-  - 2.4
+  - 2.2
 script: bundle exec cutest test/dsl_test.rb
