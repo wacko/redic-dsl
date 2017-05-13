@@ -1,4 +1,6 @@
 language: ruby
 rvm:
   - 2.2
+services:
+  - redis-server
 script: bundle exec cutest test/dsl_test.rb
